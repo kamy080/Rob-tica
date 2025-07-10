@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int soma(int a, int b) { return a + b; }
+int subtrair(int a, int b) { return a - b; }
+int multiplicar(int a, int b) { return a * b; }
+
+void menu() {
+    int opcao, x, y;
+
+    cout << "Escolha a operacao:\n";
+    cout << "1 - Soma\n";
+    cout << "2 - Subtracao\n";
+    cout << "3 - Multiplicacao\n";
+    cout << "Opcao: ";
+    cin >> opcao;
+
+    cout << "Digite dois numeros: ";
+    cin >> x >> y;
+
+    switch(opcao) {
+        case 1: cout << "Resultado: " << soma(x, y) << endl; break;
+        case 2: cout << "Resultado: " << subtrair(x, y) << endl; break;
+        case 3: cout << "Resultado: " << multiplicar(x, y) << endl; break;
+        default: cout << "Opcao invalida.\n";
+    }
+}
+
+int main() {
+    menu();
+    return 0;
+}
