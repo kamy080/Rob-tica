@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+// Função para calcular quadrado
+int quadrado(int numero) {
+    return numero * numero;
+}
+
+int main() {
+    int valor;
+    cout << "Digite um numero: ";
+    cin >> valor;
+
+    cout << "Quadrado de " << valor << " é " << quadrado(valor) << endl;
+
+    return 0;
+}
