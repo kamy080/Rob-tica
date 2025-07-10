@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+// Função que mostra os elementos do vetor
+void mostrarVetor(int* vetor, int tamanho) {
+    for (int i = 0; i < tamanho; i++) {
+        cout << "Elemento " << i << ": " << *(vetor + i) << endl;
+    }
+}
+
+int main() {
+    int numeros[5];
+
+    cout << "Digite 5 numeros inteiros:\n";
+    for (int i = 0; i < 5; i++) {
+        cin >> numeros[i];
+    }
+
+    mostrarVetor(numeros, 5);
+
+    return 0;
+}
