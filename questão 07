@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+// Função de saudação
+void mostrarMensagem() {
+    cout << "Seja bem-vindo ao programa C++!\n";
+}
+
+int main() {
+    mostrarMensagem();
+    return 0;
+}
