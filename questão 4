@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string nome;
+    int idade;
+
+    // Entrada
+    cout << "Digite seu nome: ";
+    getline(cin, nome); // permite espaço no nome
+
+    cout << "Digite sua idade: ";
+    cin >> idade;
+
+    // Saída personalizadaa
+    cout << "Olá, " << nome << "! Você tem " << idade << " anos.\n";
+
+    return 0;
+}
