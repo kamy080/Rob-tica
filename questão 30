@@ -1,0 +1,38 @@
+
+#pragma once
+#include <iostream>
+using namespace std;
+
+
+int dobrar(int valor) {
+    return valor * 2;
+}
+
+void inverter(int &valor) {
+    valor = -valor;
+}
+
+
+void zerar(int* ptr) {
+    *ptr = 0;
+}
+
+
+int main() {
+    int numero = 10;
+
+    cout << "Valor original: " << numero << endl;
+
+    
+    cout << "Dobro (por valor): " << dobrar(numero) << endl;
+
+    
+    inverter(numero);
+    cout << "Invertido (por referência): " << numero << endl;
+
+    
+    zerar(&numero);
+    cout << "Zerado (por ponteiro): " << numero << endl;
+
+    return 0;
+}
