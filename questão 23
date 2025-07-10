@@ -1,0 +1,13 @@
+#ifndef FUNCOES_H
+#define FUNCOES_H
+
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "Nome: Kamyla Vithorya Monteiro Alencar\n";
+    cout << "Curso: Robótica com C++\n";
+    cout << "Professor: Luís Vitorino\n";
+}
+
+#endif
