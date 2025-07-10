@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+// Função para verificar se número é par
+bool ehPar(int numero) {
+    return numero % 2 == 0;
+}
+
+int main() {
+    int n;
+    cout << "Digite um numero inteiro: ";
+    cin >> n;
+
+    if (ehPar(n)) {
+        cout << n << " é par.\n";
+    } else {
+        cout << n << " é impar.\n";
+    }
+
+    return 0;
+}
