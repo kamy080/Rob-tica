@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 7, b = 2;
+    float x = 7.0f, y = 2.0f;
+    double m = 7.0, n = 2.0;
+
+    // Resultados
+    cout << "int: 7 / 2 = " << (a / b) << endl;
+    cout << "float: 7.0 / 2.0 = " << (x / y) << endl;
+    cout << "double: 7.0 / 2.0 = " << (m / n) << endl;
+
+    return 0;
+}
