@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+// Um por valor, outro por referência
+void alterar(int valor, int &referencia) {
+    valor += 10;
+    referencia += 10;
+
+    cout << "Dentro da função: valor = " << valor 
+         << ", referencia = " << referencia << endl;
+}
+
+int main() {
+    int a = 5, b = 5;
+
+    alterar(a, b);
+
+    cout << "Fora da função: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
