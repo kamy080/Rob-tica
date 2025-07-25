@@ -1,0 +1,61 @@
+#include <iostream>
+#include "pessoa.hpp"
+using namespace std;
+int main ()
+{
+
+    cout<< "digite o nome: ";
+    string nome= "";
+    getline (cin, nome);
+    cout << " digite a idade: ";
+    int idade = 0;
+    cin >> idade;
+    pessoa p1 ={
+        nome,
+        idade 
+    };
+    cout<<endl;
+} // tem alguma coisa errada// ver depois
+
+
+
+
+
+// parte . pessoa.hpp
+#include <string>
+#ifndef PESSOA_HPP
+#define PESSOA_HPP
+struct pessoa {
+ std:: string nome;
+ int idade;
+
+ void imprimir (std::string msg) const;
+ void imprimir () const;
+ private: 
+ void imprimiNatela() const;
+
+
+}
+
+
+// parte. pessoa.cpp
+#include "pessoa.hpp"
+#include <iostream> 
+
+std:: string msg (std::string str)
+{
+    return str;
+}
+void pessoa::imprimir (std:: string msg) const // implementação do método imprimir 
+{
+    std::cout << msg << std:: endl; // imprimir a mensagem passada como argumento 
+    imprimirnatela();
+}
+void pesssoa::imprimir()const // implementação do método imprimir sem argumento 
+{
+    imprimirnatela();
+}
+void pessoa::imprimirnatela() const 
+{
+
+}
